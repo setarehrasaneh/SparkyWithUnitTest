@@ -50,21 +50,6 @@ namespace SparkyNUnitTest
         }
 
         [Test]
-        public void OddRange_InputMinAndMaxRange_ReturnValidOddNumberRange()
-        {
-            //Arrange
-            Calculator calculator = new();
-            List<int> expectedOddRange = new (){ 5,7,9}; //5-10
-
-            //Act
-            List<int> result = calculator.GetOddRange(5, 10);
-
-            //Assert
-          //  Assert.AreEqual(expectedOddRange, result);  
-          Assert.That(result , Is.EquivalentTo(expectedOddRange));   
-        }
-
-        [Test]
         public void DiscountCheck_DefaultCustomer_ReturnDiscountInRange()
         {
             int result = customer.Discount;
